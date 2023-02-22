@@ -262,12 +262,11 @@ a {
 .Chapters-Grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
 
 .Chapters-content {
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 8em;
   float: right;
   padding: .5em;
