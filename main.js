@@ -109,7 +109,7 @@ let database = [
   },
   {
     titel: 'title of manga',
-    image: 'images/Manga1.png',
+    image: 'images/Manga2.jpg',
     chapters: {
       first: '1',
       second: '2',
