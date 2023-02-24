@@ -225,7 +225,6 @@ a {
 .Chapters-container {
   position: relative;
   background-color: var(--black2);
-  display: block;
   width: 66%;
   height: 145vh;
   float: right;
