@@ -228,11 +228,11 @@ a {
   display: block;
   width: 66%;
   height: 145vh;
-  float: right;
   margin: 1em 1em 1em 1em;
   border: 1px solid;
   border-radius: .5em;
   overflow: hidden;
+  float: right;
 }
 
 .container-child {
