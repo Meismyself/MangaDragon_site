@@ -21,7 +21,8 @@ h2,
 h3,
 h4,
 h5,
-h6,button {
+h6,
+button {
   color: var(--white)
 }
 
@@ -29,6 +30,7 @@ html,
 body {
   background-color: black;
 }
+
 header {
   position: fixed;
   display: flex;
@@ -120,6 +122,7 @@ header #myDropdown {
   border-radius: 1rem;
   transition: all .5s ease-in-out;
 }
+
 #dropdown-content ul {
   display: flex;
   flex-direction: column;
@@ -223,12 +226,12 @@ a {
 }
 
 .Chapters-container {
-  --webkit-position: relative;
+  position: relative;
   background-color: var(--black2);
   display: block;
-  width: 66%;
+  width: 65%;
   height: 145vh;
-  margin: 1em 1em 1em 1em;
+  margin: 1em;
   border: 1px solid;
   border-radius: .5em;
   overflow: hidden;
@@ -293,7 +296,8 @@ a {
   margin-left: 50%;
   margin-bottom: .5em;
 }
-#more{
+
+#more {
   position: absolute;
   left: 50%;
   bottom: 1em;
@@ -303,10 +307,11 @@ a {
   border: none;
   padding: .5em;
 }
-.mustWatch,.BestSeries{
- --webkit-position: absolute;
- top: 0;
-  margin: 1em .5em 0 .5em;
+
+.mustWatch,
+.BestSeries {
+  position: relative;
+  margin: 1em .5em 0 1em;
   width: 30%;
   height: 50em;
   border-radius: .5em;
@@ -315,19 +320,25 @@ a {
   display: flex;
   overflow: hidden;
 }
-.mustWatch h3, .BestSeries h3{
+
+.mustWatch h3,
+.BestSeries h3 {
   position: absolute;
   top: .5em;
   right: 0em;
 }
-.mustWatch .header, .BestSeries .header {
+
+.mustWatch .header,
+.BestSeries .header {
   position: absolute;
   top: 3em;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
 }
-.mustWatch h4, .BestSeries h4{
+
+.mustWatch h4,
+.BestSeries h4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,7 +347,10 @@ a {
   background-color: slategray;
   cursor: pointer;
 }
-#BestSeries-Grid-Month, #BestSeries-Grid-Week, #BestSeries-Grid-Day{
+
+#BestSeries-Grid-Month,
+#BestSeries-Grid-Week,
+#BestSeries-Grid-Day {
   position: relative;
   top: 6.9em;
   left: -200%;
@@ -344,7 +358,10 @@ a {
   flex-direction: column;
   transition: all .5s ease;
 }
-.mustWatch #mustWatch-Grid-Month, #mustWatch-Grid-Week, #mustWatch-Grid-Day{
+
+.mustWatch #mustWatch-Grid-Month,
+#mustWatch-Grid-Week,
+#mustWatch-Grid-Day {
   position: relative;
   left: -200%;
   top: 6.9em;
@@ -352,14 +369,17 @@ a {
   flex-direction: column;
   transition: all .5s ease;
 }
-.mustWatch-content, .BestSeries-content{
+
+.mustWatch-content,
+.BestSeries-content {
   position: relative;
   width: 18.5em;
   height: 7em;
   margin-bottom: .3em;
   border-bottom: 1px solid var(--black1);
 }
-.BestSeries-content #tertib{
+
+.BestSeries-content #tertib {
   position: absolute;
   right: .5em;
   display: inline-flex;
@@ -370,28 +390,33 @@ a {
   background-color: var(--black1);
   border-radius: .2em;
 }
-.BestSeries-content img{
+
+.BestSeries-content img {
   position: absolute;
   right: 3em;
   width: 5em;
   height: 6em;
 }
-.mustWatch-content img{
+
+.mustWatch-content img {
   position: absolute;
   right: .5em;
   width: 5em;
   height: 6em;
 }
+
 .BestSeries-content a {
   position: relative;
   top: .5em;
   margin-left: 2em;
 }
+
 .mustWatch-content a {
   position: relative;
   top: .5em;
-  margin-left:  4em;
+  margin-left: 4em;
 }
+
 .mustWatch-content .show {
   position: absolute;
   bottom: 0;
@@ -401,19 +426,23 @@ a {
   justify-content: space-between;
   border-top: 1px solid var(--black1);
 }
+
 .mustWatch-content .show span {
   margin-top: .4em;
 }
-.warning{
+
+.warning {
   display: block;
   width: 17em;
   height: 17em;
   margin: 1em;
 }
-.warning img{
+
+.warning img {
   height: 100%;
 }
-.call-us{
+
+.call-us {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -425,49 +454,58 @@ a {
   background-color: var(--black2);
   animation: transform 2s ease-in-out;
 }
-.call-us h3{
+
+.call-us h3 {
   width: 100%;
   padding: 1em;
   border-bottom: 1px solid var(--white)
 }
+
 .call-us a {
- padding: 1em;
- margin: 1em;
- width: 90%;
- height: 4em;
- text-align: center;
- background-color: var(--blue);
- border-radius: .5em;
- animation: big 2s ease-in-out 0s infinite alternate;
+  padding: 1em;
+  margin: 1em;
+  width: 90%;
+  height: 4em;
+  text-align: center;
+  background-color: var(--blue);
+  border-radius: .5em;
+  animation: big 2s ease-in-out 0s infinite alternate;
 }
-.call-us a i{
+
+.call-us a i {
   margin-right: .5em;
   animation: topp 1s ease 0s infinite alternate;
 }
+
 @keyframes big {
   0% {
-    
+
     color: black;
   }
+
   100% {
     background-color: black;
     color: white;
   }
 }
+
 @keyframes topp {
-  1%{
+  1% {
     transform: translateY(0px)
   }
+
   100% {
     transform: translateY(10px)
   }
 }
-footer{
+
+footer {
   display: inline-block;
   width: 100%;
   height: 20em;
   background-color: var(--black2)
 }
+
 .toggle {
   display: flex;
   align-items: center;
