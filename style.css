@@ -223,9 +223,9 @@ a {
 }
 
 .Chapters-container {
-  position: relative;
+  --webkit-position: relative;
   background-color: var(--black2);
-  display: inline-block;
+  display: block;
   width: 66%;
   height: 145vh;
   float: right;
