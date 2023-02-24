@@ -49,7 +49,21 @@ document.getElementById('mustWatch-Grid-Month').style.transform = 'translateX(20
 })
 // End .......,..............................
 // Bestseries
-
+document.getElementById('Bestseries-Day').addEventListener('click', function() {
+  document.getElementById('Bestseries-Grid-Day').style.transform = 'translateX(0%)'
+  document.getElementById('Bestseries-Grid-Week').style.transform = 'translateX(0%)'
+  document.getElementById('Bestseries-Grid-Month').style.transform = 'translateX(0%)'
+})
+document.getElementById('Bestseries-Week').addEventListener('click', function() {
+  document.getElementById('Bestseries-Grid-Day').style.transform = 'translateX(100%)'
+  document.getElementById('Bestseries-Grid-Week').style.transform = 'translateX(100%)'
+  document.getElementById('Bestseries-Grid-Month').style.transform = 'translateX(100%)'
+})
+document.getElementById('Bestseries-Month').addEventListener('click', function() {
+  document.getElementById('Bestseries-Grid-Day').style.transform = 'translateX(200%)'
+  document.getElementById('Bestseries-Grid-Week').style.transform = 'translateX(200%)'
+  document.getElementById('Bestseries-Grid-Month').style.transform = 'translateX(200%)'
+})
 // End
 document.getElementById('search').addEventListener('keyup', function(event) {
   let searchQuery = event.target.value;
