@@ -225,6 +225,7 @@ a {
 .Chapters-container {
   position: relative;
   background-color: var(--black2);
+  display: inline-block;
   width: 66%;
   height: 145vh;
   float: right;
@@ -303,8 +304,7 @@ a {
   padding: .5em;
 }
 .mustWatch,.BestSeries{
-  position: absolute;
-  top: 0;
+  position: relative;
   margin: 1em .5em 0 .5em;
   width: 30%;
   height: 50em;
