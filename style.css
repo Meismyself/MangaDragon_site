@@ -305,6 +305,7 @@ a {
 }
 .mustWatch,.BestSeries{
   position: absolute;
+  top: 0;
   margin: 1em .5em 0 .5em;
   width: 30%;
   height: 50em;
