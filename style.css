@@ -304,7 +304,7 @@ a {
   padding: .5em;
 }
 .mustWatch,.BestSeries{
-  position: relative;
+  position: absolute;
   margin: 1em .5em 0 .5em;
   width: 30%;
   height: 50em;
